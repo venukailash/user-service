@@ -8,5 +8,12 @@ dependencies = [
     "connexion[flask,swagger-ui,uvicorn]>=3.2.0",
     "flask>=3.0.3",
     "flask-marshmallow[sqlalchemy]>=1.2.1",
+]
+
+[dependency-groups]
+dev = [
+    "black>=24.8.0",
+    "pre-commit>=3.5.0",
     "pytest>=8.3.5",
+    "ruff>=0.14.3",
 ]
