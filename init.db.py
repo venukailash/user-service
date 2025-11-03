@@ -1,6 +1,5 @@
 from app import create_app
 from extensions import db
-from src.models.user import User
 
 connex_app = create_app()
 

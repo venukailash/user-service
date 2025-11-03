@@ -3,6 +3,7 @@ from app import create_app
 from extensions import db as _db
 from src.models.user import User
 
+
 @pytest.fixture
 def app():
     connex_app = create_app("testing")
@@ -12,9 +13,11 @@ def app():
         _db.session.remove()
         _db.drop_all()
 
+
 @pytest.fixture
 def client(app):
     return app.test_client()
+
 
 @pytest.fixture
 def setOneUser(app):
